@@ -7,6 +7,40 @@
     <title>Form</title>
 </head>
 <body>
-    
+    <form method="POST" action="https://formspree.io/bravo-soft@ukr.net">
+        <label>Client Name:
+        <input type="text" name="client-name" placeholder="Your Name" requared/>
+        </label>
+        <br /><br />
+        
+        <label for="client-email">Client Email:</label>
+        <input type="email" name="client-email" id="client-email" placeholder="Your Email"/>
+        <br /><br />
+        
+        <label>Client Password:
+            <input type="password" name="client-password">
+        </label>
+        <br /><br />
+        
+        <label>Client Gender:</label><br />
+            <label><input type="radio" name="client-gender" value="male">&nbsp;Male</label><br /> 
+            <label><input type="radio" name="client-gender" value="female">&nbsp;Feale</label><br />
+            <label><input type="radio" name="client-gender" value="unknown" checked>&nbsp;Unknown</label>
+        <br /><br />
+        
+        <label>Car plate number
+         <input type="text" name="card-plate" requared
+         pattern="[a-z]{2}[\d]{4}[A-Z]{2}"
+         placeholder="AA1234BB"
+         title="AA1234BB"
+         >
+            
+        </label>
+        <input type="submit" value="S E N D"/>
+        <input type="reset" value="Clear Fields"/>
+        
+        
+        
+    </form>    
 </body>
 </html>
